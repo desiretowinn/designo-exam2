@@ -1,7 +1,6 @@
 .design{
     @include flex(row, center, space-between);
     margin-top: 160px;
-    
     &__hover{
         background-image: url(../../images/web-designs.png);
         background-repeat: no-repeat;
@@ -102,7 +101,7 @@
 @media only screen and (max-width: 768px){
     .design{
         display: table;
-        width: 100%;
+        width: 607px;
         margin-top: 160px;
         
         &__hover{

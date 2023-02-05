@@ -1,0 +1,178 @@
+.feature__list{
+    @include flex(row, center, space-between);
+    margin-top: 160px;
+    list-style-type: none;
+    padding-left: 0;
+    
+    &--item{
+        text-align: center;
+        
+        &--box{
+            width: 202px;
+            height: 202px;
+            margin: 0px auto;
+            padding-top: 15px;
+            background-image: url(../../images/Oval1-feature.png);
+            background-position: top center;
+            margin-bottom: 48px;
+        }
+        
+        .feature__list--item--box-img-active{
+            margin-top: 23px;
+        }
+        
+        &--info{
+            width: 350px;
+            
+            &-heading{
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 5px;
+                color: #333136;
+                margin: 0;
+                margin-bottom: 32px;
+            }
+            
+            &-text{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #333136;
+                
+            }
+        }
+    }
+}
+
+
+
+// ================================
+// TABLET
+// ================================
+
+
+@media only screen and (max-width: 768px){
+    
+    .feature-section{
+        .container{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+    }
+    
+    .feature__list{
+        display: table;
+        margin-top: 120px;
+        width: 650px;
+        
+        &--item{
+            text-align: center;
+            @include flex(row, center, space-between);
+            
+            
+            &--box{
+                width: 202px;
+                height: 202px;
+                margin: 0px auto;
+                padding-top: 15px;
+                background-image: url(../../images/Oval1-feature.png);
+                background-position: top center;
+                margin-bottom: 48px;
+                margin-right: 48px;
+            }
+            
+            .feature__list--item--box-img-active{
+                margin-top: 23px;
+            }
+            
+            &--info{
+                width: 100%;
+                text-align: left;
+                &-heading{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 26px;
+                    letter-spacing: 5px;
+                    color: #333136;
+                    margin: 0;
+                    margin-bottom: 16px;
+                }
+                
+                &-text{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333136;
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+// ================================
+// MOBILE
+// ================================
+
+@media only screen and (max-width: 375px){
+
+    .feature-section{
+        .container{
+            margin-left: -10px;
+            margin-right: -24px;
+        }
+    }
+
+    .feature__list{
+        display: table;
+        margin-top: 120px;
+        width: 327px;
+        padding-left: 0;
+        &--item{
+            text-align: center;
+            display: table;
+            vertical-align: middle;
+            
+            
+            &--box{
+                width: 202px;
+                height: 202px;
+                margin: 0px auto;
+                padding-top: 15px;
+                background-image: url(../../images/Oval1-feature.png);
+                background-position: top center;
+                margin-bottom: 48px;
+                margin-right: 48px;
+            }
+            
+            .feature__list--item--box-img-active{
+                margin-top: 23px;
+            }
+            
+            &--info{
+                width: 100%;
+                text-align: center;
+                &-heading{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 26px;
+                    letter-spacing: 5px;
+                    color: #333136;
+                    margin: 0;
+                    margin-bottom: 16px;
+                }
+                
+                &-text{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #333136;
+                    
+                }
+            }
+        }
+    }
+}

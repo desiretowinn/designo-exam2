@@ -1,0 +1,193 @@
+
+.action-section{
+    position: relative;
+}
+
+.action{
+    @include flex(row, center, space-between);
+    width: 1111px;
+    height: 292px;
+    padding: 72px 95px;
+    background: #E7816B;
+    border-radius: 15px;
+    background-image: url(../../images/background-action.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    color: #fff;
+    margin-top: 160px;
+    position: absolute;
+    bottom: -470px;
+    
+    &__info{
+        width: 460px;
+        
+        &-heading{
+            width: 268px;
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 40px;
+            margin: 0;
+        }
+        
+        &-text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0;
+            margin-top: 10px;
+        }
+    }
+    
+    &__button{
+        background: #FFFFFF;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border: none;
+        color: #333136;
+        padding: 17px 19px;
+
+        &:hover{
+            background: #FFAD9B;
+            cursor: pointer;
+        }
+    }
+}
+
+
+// ================================
+// TABLET
+// ================================
+
+
+@media only screen and (max-width: 768px){
+    .action{
+        display: table;
+        width: 550px;
+        height: 350px;
+        padding: 57px 20px;
+        background: #E7816B;
+        border-radius: 15px;
+        background-image: url(../../images/background-action.png);
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: cover;
+        color: #fff;
+        margin-top: 160px;
+        position: absolute;
+        bottom: -470px;
+        left: 60px;
+        text-align: center;
+        
+        &__info{
+            width: 573px;
+            text-align: center;
+            
+            &-heading{
+                width: 335px;
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 40px;
+                margin: 0 auto;
+            }
+            
+            &-text{
+                width: 450px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                margin: 0 auto;
+                margin-top: 10px;
+                margin-bottom: 32px;
+            }
+        }
+        
+        &__button{
+            background: #FFFFFF;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: none;
+            color: #333136;
+            padding: 17px 19px;
+    
+            &:hover{
+                background: #FFAD9B;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+// ================================
+// MOBILE
+// ================================
+
+@media only screen and (max-width: 375px){
+        .action{
+            display: table;
+            width: 327px;
+            height: 379px;
+            padding: 64px 24px;
+            background: #E7816B;
+            border-radius: 15px;
+            background-image: url(../../images/background-action.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: cover;
+            color: #fff;
+            margin-top: 160px;
+            position: absolute;
+            bottom: -470px;
+            left: 25px;
+            text-align: center;
+            
+            &__info{
+                width: 279px;
+                text-align: center;
+                
+                &-heading{
+                    width: 279px;
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 36px;
+                    margin: 0;
+                }
+                
+                &-text{
+                    width: 279px;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin: 0 auto;
+                    margin-top: 10px;
+                    margin-bottom: 32px;
+                }
+            }
+            
+            &__button{
+                background: #FFFFFF;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                border: none;
+                color: #333136;
+                padding: 17px 19px;
+        
+                &:hover{
+                    background: #FFAD9B;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
