@@ -1,0 +1,272 @@
+.design{
+    @include flex(row, center, space-between);
+    margin-top: 160px;
+    
+    &__hover{
+        background-image: url(../../images/web-designs.png);
+        background-repeat: no-repeat;
+        &--card{
+            width: 541px;
+            height: 640px;
+            text-align: center;
+            padding-top: 273px;
+            color: #fff;
+            border-radius: 15px;
+            
+            &:hover{
+                background: #E7816B;
+                opacity: 0.8;
+            }
+            
+            
+            &-heading{
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: 2px;
+                margin: 0;
+                margin-bottom: 24px;
+            }
+            
+            &-text{
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                margin: 0;
+                background-image: url(../../icons/right-designs.svg);
+                background-repeat: no-repeat;
+                background-position: center right 170px;
+            }
+        }
+    }
+    
+    &__box{
+
+        &_hover{
+            background-image: url(../../images/app-designs.png);
+            background-repeat: no-repeat;
+
+            &--card{
+                width: 541px;
+                height: 308px;
+                text-align: center;
+                padding-top: 107px;
+                color: #fff;
+                border-radius: 15px;
+
+                &:hover{
+                    background: #E7816B;
+                    opacity: 0.7;
+                }
+                
+                &-heading{
+                    font-weight: 500;
+                    font-size: 40px;
+                    line-height: 48px;
+                    letter-spacing: 2px;
+                    margin: 0;
+                    margin-bottom: 24px;
+                }
+                
+                &-text{
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 22px;
+                    letter-spacing: 5px;
+                    text-transform: uppercase;
+                    margin: 0;
+                    background-image: url(../../icons/right-designs.svg);
+                    background-repeat: no-repeat;
+                    background-position: center right 170px;
+                }
+            }
+        }
+        
+    }
+    
+    .design__box_hover-active{
+        background-image: url(../../images/graphic-designs.png);
+        margin-top: 24px;
+    }
+}
+
+
+
+// ================================
+// TABLET
+// ================================
+
+
+@media only screen and (max-width: 768px){
+    .design{
+        display: table;
+        width: 100%;
+        margin-top: 160px;
+        
+        &__hover{
+            background-image: url(../../images/web-designs.png);
+            background-size: cover;
+            background-position: center bottom;
+            border-radius: 15px;
+            &--card{
+                width: 100%;
+                height: 200px;
+                text-align: center;
+                padding-top: 53px;
+                color: #fff;
+                border-radius: 15px;
+                margin-bottom: 24px;
+                
+                
+                &-text{
+                    background-position: center right 190px;
+                }
+            }
+        }
+        
+        &__box{
+    
+            &_hover{
+                background-image: url(../../images/app-designs.png);
+                background-size: cover;
+                background-position: center center;
+                border-radius: 15px;
+                
+                &--card{
+                    width: 100%;
+                    height: 200px;
+                    text-align: center;
+                    padding-top: 53px;
+                    color: #fff;
+                    border-radius: 15px;
+    
+                    &:hover{
+                        background: #E7816B;
+                        opacity: 0.7;
+                    }
+                    
+                    &-heading{
+                        font-weight: 500;
+                        font-size: 40px;
+                        line-height: 48px;
+                        letter-spacing: 2px;
+                        margin: 0;
+                        margin-bottom: 24px;
+                    }
+                    
+                    &-text{
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 22px;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        margin: 0;
+                        background-image: url(../../icons/right-designs.svg);
+                        background-repeat: no-repeat;
+                        background-position: center right 190px;
+                    }
+                }
+            }
+            
+        }
+        
+        .design__box_hover-active{
+            background-image: url(../../images/graphic-designs.png);
+            margin-top: 24px;
+        }
+    }
+    
+}
+
+
+
+// ================================
+// MOBILE
+// ================================
+
+@media only screen and (max-width: 375px){
+    .design{
+        display: table;
+        width: 100%;
+        margin-top: 160px;
+        
+        &__hover{
+            background-image: url(../../images/web-designs.png);
+            background-size: cover;
+            background-position: center bottom;
+            border-radius: 15px;
+            &--card{
+                width: 100%;
+                height: 250px;
+                text-align: center;
+                padding-top: 90px;
+
+                &-heading{
+                    font-weight: 500;
+                    font-size: 28px;
+                    line-height: 36px;
+                    letter-spacing: 2px;
+                    margin: 0;
+                    margin-bottom: 11px;
+                }
+                
+                &-text{
+                    background-position: center right 50px;
+                }
+            }
+        }
+        
+        &__box{
+    
+            &_hover{
+                background-image: url(../../images/app-designs.png);
+                background-size: cover;
+                background-position: center center;
+                border-radius: 15px;
+                
+                &--card{
+                    width: 100%;
+                    height: 250px;
+                    text-align: center;
+                    padding-top: 90px;
+                    color: #fff;
+                    border-radius: 15px;
+    
+                    &:hover{
+                        background: #E7816B;
+                        opacity: 0.7;
+                    }
+                    
+                    &-heading{
+                        font-weight: 500;
+                        font-size: 28px;
+                        line-height: 36px;
+                        letter-spacing: 2px;
+                        margin: 0;
+                        margin-bottom: 11px;
+                    }
+                    
+                    &-text{
+                        font-weight: 500;
+                        font-size: 15px;
+                        line-height: 22px;
+                        letter-spacing: 5px;
+                        text-transform: uppercase;
+                        margin: 0;
+                        background-image: url(../../icons/right-designs.svg);
+                        background-repeat: no-repeat;
+                        background-position: center right 50px;
+                    }
+                }
+            }
+            
+        }
+        
+        .design__box_hover-active{
+            background-image: url(../../images/graphic-designs.png);
+            margin-top: 24px;
+        }
+    }
+}
