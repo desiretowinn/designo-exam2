@@ -1,0 +1,206 @@
+.hero{
+    margin-top: 90px;
+    width: 1111px;
+    height: 640px;
+    @include flex(row, start, space-between);
+    padding: 139px 90px 0px 90px;
+    background: #E7816B;
+    border-radius: 15px;
+    color: #fff;
+    background-image: url(../../images/Oval.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    
+    &__info{
+        width: 540px;
+        margin-right: 100px;
+        &--heading{
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 48px;
+            margin: 0;
+            margin-bottom: 11px;
+        }
+        
+        &--text{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 40px;
+        }
+        
+        &--button{
+            border: none;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #333136;
+            padding: 15px 25px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            
+            &:hover{
+                cursor: pointer;
+                background: #FFAD9B;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    &__img{
+        filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.497569));
+    }
+}
+
+
+// ================================
+// TABLET
+// ================================
+
+
+@media only screen and (max-width: 768px){
+    .hero{
+        margin-top: 100px;
+        width: 0px;
+        height: 843px;
+        display: table;
+        align-items: center;
+        vertical-align: middle;
+        padding: 60px 18px 0px 18px;
+        background: #E7816B;
+        border-radius: 15px;
+        color: #fff;
+        background-image: url(../../images/Oval.png);
+        background-repeat: no-repeat;
+        background-position-x: 150px;
+        background-position-y: center;
+        text-align: center;
+        
+        &__info{
+            width: 573px;
+            margin-right: 0px;
+            &--heading{
+                font-weight: 500;
+                font-size: 48px;
+                line-height: 48px;
+                margin: 0;
+                margin-bottom:21px;
+            }
+            
+            &--text{
+                margin: 0px auto;
+                width: 445px;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                margin-bottom: 19px;
+            }
+            
+            &--button{
+                border: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+                padding: 15px 25px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                margin-bottom: 75px;
+                
+                &:hover{
+                    cursor: pointer;
+                    background: #FFAD9B;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        
+        &__img{
+            width: 284px;
+            margin:0px auto; 
+        }
+    }
+}
+
+
+
+// ================================
+// MOBILE
+// ================================
+
+@media only screen and (max-width: 375px){
+
+    .hero-section{
+        .container{
+            padding: 0;
+        }
+    }
+
+    .hero{
+        margin-top: 100px;
+        width: 100%;
+        height: 843px;
+        display: table;
+        align-items: center;
+        vertical-align: middle;
+        padding: 80px 18px 0px 18px;
+        background: #E7816B;
+        border-radius: 0px;
+        color: #fff;
+        background-image: url(../../images/Oval.png);
+        background-repeat: no-repeat;
+        background-position-x: 150px;
+        background-position-y: center;
+        text-align: center;
+        
+        &__info{
+            width: 327px;
+            margin-right: 0px;
+            &--heading{
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 36px;
+                margin: 0;
+                margin-bottom:14px;
+            }
+            
+            &--text{
+                margin: 0px auto;
+                width: 327px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 19px;
+            }
+            
+            &--button{
+                border: none;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: #333136;
+                padding: 15px 25px;
+                background: #FFFFFF;
+                border-radius: 8px;
+                margin-bottom: 75px;
+                
+                &:hover{
+                    cursor: pointer;
+                    background: #FFAD9B;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        
+        &__img{
+            width: 284px;
+            margin:0px auto; 
+        }
+    }
+}
