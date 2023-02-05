@@ -2,9 +2,9 @@ footer{
     background: #1D1C1E;
     margin-top: 380px;
     padding-bottom: 52px;
-    
+    padding-top: 0;
     .footer{
-        padding-top: 144px;
+        padding-top: 140px;
         &__box{
             @include flex(row, center, space-between);
             
@@ -76,8 +76,11 @@ footer{
         }
     }
     
-}
+} 
 
+.footer-active{
+    padding-top: -30px;
+}
 
 // ================================
 // TABLET
